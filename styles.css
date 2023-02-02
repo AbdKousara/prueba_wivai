@@ -1,0 +1,151 @@
+*,
+*::after,
+*::before {
+       margin: 0;
+       padding: 0;
+       -webkit-box-sizing: inherit;
+       box-sizing: inherit;
+       font-family: inherit;
+}
+
+html {
+       /* this defines what 1 rem is */
+       font-size: 62.5%;
+}
+
+body {
+       -webkit-box-sizing: border-box;
+       box-sizing: border-box;
+       font-family: 'Montserrat', sans-serif;
+       
+}
+
+#hero_section {
+       display: flex;
+       justify-content: space-between;
+       background:  url('/images/image.jpg') no-repeat center scroll; 
+       background-size: 100% 100%;
+       position: absolute;
+       border-radius: 0px 0px 20px 20px;
+      height: 88vh;
+      width: 100%;
+      z-index: 1;
+
+}
+
+.heading {
+       padding: 10% 5% 0;
+       width: 40%;
+}
+
+.big_title {
+       font-size: 5.5rem;
+       font-style: normal;
+       font-weight: 600;
+       line-height: 6.6rem;
+       color: #133599;
+
+}
+
+.heading_logo {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       margin: 10px 50px 20px 0;
+
+}
+
+.action_btn {
+       all: unset;
+       background-color: #1AF5B1;
+       color: #133599;
+       clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+       padding: 10px 30px;
+       margin-top: 40px;
+       font-size: 1.6rem;
+
+
+}
+
+.logo {
+       border-radius: 5px;
+       width: 140px;
+}
+
+#features_section {
+       display: flex;
+       justify-content: space-between;
+       background-color: #faf8f7;
+       padding: 40px 50px;  
+       position: fixed;
+       bottom: 0;
+
+}
+.feature{
+       display: flex;
+       justify-content: space-between;
+}
+
+.feature_img{
+       margin-right: 20px;
+       width: 4.8rem;
+       height: 5rem; 
+}
+
+.feature_text{
+       color: #133599;
+       font-size: 2.2rem;
+       font-weight: 600;
+       line-height: 2rem;
+}
+
+@media only screen and (max-width: 576px) {
+       #hero_section {
+              flex-direction: column;
+              align-items: flex-end;
+              background-position: 75%;
+              background-size: 350% 100%;
+              position: relative;
+              
+       }
+       .heading {
+              padding: 40px 40px;
+              background-color: #F4F2F3;
+              width: 100%;
+              border-bottom-right-radius: 70px;
+          
+       }
+
+       .big_title {
+              font-size: 3rem;
+              line-height: 3.6rem;
+       }
+       .logo_nri{
+              transform: rotate(-90deg);
+              margin-right: -140%;
+              margin-top: -50%;
+              text-transform: uppercase;
+              font-size: 1.2;
+       }
+       .heading_logo {
+              height: 100%;
+       
+       }
+       #features_section {
+              display: flex;
+              flex-direction: column;
+              text-align: center;
+              padding: 48px 40px  0;
+             position: relative;
+       }
+       .feature{
+              display: flex;
+              flex-direction: column;
+             align-items: center;
+             padding-bottom: 48px;
+       }
+       .feature_img{
+              margin-bottom: 15px;
+       }
+
+}
